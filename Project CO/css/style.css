@@ -1,0 +1,901 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.conteiner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+
+.clear {
+    clear: both;
+}
+
+/* Classes Especificas do site */
+
+.header {
+    padding: 8px 0;
+}
+
+.menu-total {
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 800;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    padding: 0 40px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav.menu-desktop {
+    float: right;
+}
+
+nav.menu-desktop ul {
+    position: relative;
+    top: 40px;
+    right: 80px
+}
+
+nav.menu-desktop li {
+    padding: 0 20px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+nav.menu-desktop a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "GT America";
+}
+
+nav.menu-desktop li.select {
+    text-shadow: 0 0 2px white;
+}
+
+nav.menu-desktop a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00d1ff;
+    transition: width .3s;
+}
+
+nav.menu-desktop a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.main-bg {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.main-bg h2 {
+    color: #00d1ff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Untitled Sans";
+}
+
+.main-bg p {
+    text-align: left;
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+    font-family: "GT America";
+}
+
+.main-bg > .conteiner {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+}
+
+.button {
+    flex: 1 1 auto;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+    display: inline-block;
+    box-shadow: 0 0 20px gray;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.button1 {
+    color: white;
+    background-image: linear-gradient(to right, #00d1ff 0%, #00AACC 51%, #00d1ff 100%);
+}
+
+.button1:hover {
+    background-position: right center;
+    box-shadow: 0 0 15px gray;
+}
+
+/*
+    diferenciais
+*/
+
+section.diferenciais {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.line-text {
+    position: relative;
+    display: inline-block;
+}
+
+.line-text h2 {
+    color: #00d1ff;
+    font-weight: normal;
+    font-size: 27px;
+    color: #243446;
+    font-weight: 600;
+    border-top: 3px #00d1ff solid;
+}
+
+.icones-diferenciais {
+    margin-top: 35px;
+}
+
+#title-sobre {
+    padding-top: 20px;
+}
+
+.box-icone-single {
+    float: left;
+    width: 28%;
+    margin-bottom: 20px;
+    margin: 0 32px;
+    padding-top: 5px;
+    padding: 0 10px;
+    height: 180px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+}
+
+.box-icone-single h2 {
+    color: #243446;
+    font-size: 20px;
+}
+
+.box-icone-single h2 i {
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.box-icone-single p {
+    color: #646464;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #616374;
+    font-family: "GT America";
+}
+
+.icone-baixo {
+    margin-top: 35px;
+}
+
+/*
+    Equipe
+*/
+
+.line-text-eqip {
+    position: relative;
+    display: inline-block;
+}
+
+.line-text-eqip h2 {
+    color: #00d1ff;
+    font-weight: normal;
+    font-size: 27px;
+    color: #243446;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-shadow: 1px 2px 0 #00d1ff;
+}
+
+section.sobre-equipe {
+    padding: 30px 0;
+    background: #f7f8f9;
+    z-index: 300;
+    position: relative;
+}
+
+section.sobre-equipe > .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-container {
+    width: 50%;
+}
+
+
+.sobre-container {
+    width: 50%;
+}
+
+.sobre-container p {
+    color: black;
+    font-size: 15px;
+    margin-top: 25px;
+    font-family: "GT America";
+    color: #646464;
+}
+
+
+.avatar-box {
+    margin: 15px 0 0 40px;
+    width: 200px;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.avatar-box-l {
+    margin: 0 0 0 50px;
+}
+
+.avatar-box img {
+    height: 30px;
+    width: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+.icons-avatar-um {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-espaco {
+    margin-right: 10px;
+}
+
+.img-avatar {
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.img-avatar img {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+    transition: all 0.3s;
+}
+
+.img-avatar:hover img {
+    transform: scale(1.15);;
+}
+.descricao.avatar {
+    padding: 0 10px;
+    width: calc(100% - 70px);
+    display: inline-block;
+}
+
+.descricao-avatar h3 {
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    color: #243446;
+}
+
+.descricao-avatar p {
+    color: #646464;
+    font-weight: lighter;
+}
+
+/*inscricão*/
+
+section.inscricao {
+    background-color: #00d1ff;
+    padding: 20px 0 0 0;
+    box-shadow: 0 -4px 20px gray;
+    z-index: 200;
+}
+
+.w50 {
+    width: 50%;
+    float: left;
+}
+
+.center {
+    text-align: center;
+}
+
+h2.inscricao-texto {
+    font-weight: normal;
+    color: white;
+    padding-top: 2px
+}
+
+.inscricao-form input[type=text] {
+    width: calc(100% - 120px);
+    height: 39px;
+    background: white;
+    border: 1px solid #CCC;
+    display: inline-block;
+}
+
+.inscricao-form input[type=submit] {
+    width: 120px;
+    height: 38px;
+    background: #00AACC;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+section.cards {
+    padding: 30px 0;
+}
+
+.card-single {
+    width: 28%;
+    height: 490px;
+    float: left;
+    padding: 15px;
+    border: 1px solid #99EEFF;
+    border-radius: 0.5rem;
+    margin: 0 32px;
+}
+
+.card-single.baixo {
+    margin-top: 40px;
+}
+
+.card-single img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.card-single h3 {
+    margin-top: 5px;
+    padding-top: 40px;
+    font-weight: 600;
+    font-size: 19px;
+    font-family: "Untitled Sans";
+    color: #243446;
+}
+
+.card-single p {
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #99EEFF;
+    font-family: "GT America";
+    color: #646464;
+}
+
+/* Footer */
+
+.loc {
+    float: left;
+    width: 28%;
+    margin: 0 32px;
+}
+
+.map {
+    float: left;
+    width: 28%;
+    margin: 0 42px 0 32px;
+}
+
+.social {
+    float: left;
+    width: 28%;
+    margin: 0 10px;
+}
+
+.footer-all {
+    text-shadow: gray 0 0 3.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.footer1 {
+    background: #171e28;
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 -2px 20px gray;
+    z-index: 200;
+}
+
+footer.footer1 h2 {
+    font-weight: normal;
+    font-size: 23px;
+    font-family: "Untitled Sans";
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+footer.footer1 p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: "GT America";
+}
+
+footer.footer1 a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 7px;
+}
+
+
+div.group-icons a {
+    font-size: 14px;
+    display: inline-block;
+    margin: 10px 05px;
+}
+
+footer.footer2 {
+    padding: 10px 0;
+    background: #171e28;
+    text-align: center;
+    color: white;
+    z-index: 100;
+}
+
+footer.footer2 p {
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: "GT America";
+}
+
+div.border-footer {
+    height: 1px;
+    background-image: linear-gradient(to right, #171e28 0%, #99EEFF 51%, #171e28 100%);
+    
+}
+
+/*MENU MOBILE*/
+
+nav.menu-mobile {
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile h2 {
+    cursor: pointer;
+
+}
+
+nav.menu-mobile ul {
+    display: none;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    z-index: 999;
+    text-align: center;
+}
+
+nav.menu-mobile li {
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected {
+    background-color: rgb(225, 225, 225)
+}
+
+nav.menu-mobile a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+}
+
+/*PAGINA SOBRE*/
+
+section.title-page {
+    padding: 30px;
+    width: 100%;
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+section.title-page h2 {
+    color: #00d1ff;
+    margin-top: 70px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+section.title-page p {
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    font-family: "GT America";
+}
+
+section.title-page > .container {
+    position: relative;
+    z-index: 101;
+}
+
+.overlay-title-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.fundo-contato h2 {
+    padding-top: 20px;
+}
+
+/*NOTICIA*/
+
+section.sobre-noticia {
+    padding: 0 0;
+}
+
+.sobre-noticia-single {
+    display: inline-block;
+}
+
+.img-noticia {
+    margin-top: 60px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 2.5%;
+    height: 350px;
+    width: auto;
+    float: left;
+    box-shadow: 0px 0px 10px gray;
+    transition: all 0.3s;
+}
+
+.img-noticia:hover {
+    box-shadow: 0px 0px 15px gray;
+}
+
+.img-noticia img {
+    height: 350px;
+    width: auto;
+    margin: 0;
+    transition: all 0.3s;
+}
+
+.img-noticia:hover img {
+    transform: scale(1.15);
+}
+
+.text-noticia {
+    margin: 20px 20px 20px 0 ;
+}
+
+.sobre-noticia-single p {
+    margin-bottom: 0.5%;
+    font-family: "GT America";
+    color: #616374;
+}
+
+#top-text-noticia {
+    margin-top: 50px;
+}
+
+#bottom-text-noticia {
+    margin-bottom: 50px;
+}
+
+/*PARALAX*/
+
+section.paralax {
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+
+section.paralax h2.chamada-paralax {
+    border: 1px solid #00d1ff;
+    padding: 5px 25px;
+    color: #00d1ff;
+    font-size: 15px;
+    display: inline-block;
+    font-family: "GT America";
+    transition: all 0.3s;
+    cursor: default;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+section.paralax h2.chamada-paralax:hover {
+    background: #00d1ff;
+    color: #171e28;
+}
+
+.par-paralax {
+    margin-top: 5px;
+    font-family: "GT America";
+    font-size: 16px;
+}
+
+/**/
+
+section.equipe {
+    padding:40px 0;
+}
+
+.equipe-circles {
+    margin-top:50px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.equipe-circle-single {
+    text-align:center;
+    padding:0 20px;
+    width:33.3%;
+}
+
+.equipe-circle-single h3 {
+    margin-top:8px;
+    font-size:20px;
+    font-weight: normal;
+    color: #243446;
+    font-family: "Untitled Sans";
+}
+
+.equipe-circle-single p {
+    font-weight: 100;
+    color: #646464;
+    font-family: "GT America";
+}
+
+.avatar-single {
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    position: relative;
+    width:60%;
+    padding-top:60%;
+    margin:0 auto;
+}
+
+.avatar-single img {
+    height: 216px;
+    width: auto;
+    align-items: center;
+    margin: 0;
+    transition: all 0.3s;
+}
+.avatar-single:hover img {
+    transform: scale(1.15);
+}
+
+.av-baixo {
+    padding-top: 40px;
+}
+
+.avatar-single-container {
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius:50%;
+    background-color: #CCC;
+    background-size:100% 100%;
+}
+
+/**/
+
+.w50 {
+    width: 50%;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.p-nossa-hist {
+    font-family: "GT America";
+    color: #646464;
+}
+
+section.sobre-final {
+    width: 100%;
+    background-color: #f7f8f9;
+    border-top: 2px solid rgb(230, 230, 230);
+    padding: 20px 0px;
+}
+
+section.sobre-final p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.card-text {
+    margin-top: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.card-text img {
+    max-width: 100%;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px gray;
+}
+
+.card-text img:hover {
+    box-shadow: 0 0 20px gray;
+}
+
+.card-text h3 {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #171e28;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Untitled Sans";
+}
+
+section.contato {
+    min-height: 600px;
+    padding: 30px 0;
+}
+
+section.contato .w50,
+section.contato .w100 {
+    padding: 0 10px;
+}
+
+.formulario form {
+    margin-top: 10px
+}
+
+.formulario h2 {
+    background-color: #DDD;
+    text-align: center;
+    color: #ACAC9D;
+    font-size: 16px;
+    font-weight: normal;
+    border-left: 5px solid #CCC;
+    padding: 4px 0;
+}
+
+.formulario input[type=text],
+.formulario input[type=email] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #CCC;
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #CCC;
+    margin-bottom: 15px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.tags-form {
+    padding-left: 50px;
+}
+
+.tags-form h2 {
+    font-weight: 600;
+    font-family: "Untitled Sans";
+    color: #243446;
+}
+
+.tags-form p {
+    font-weight: 100;
+    font-family: "GT America";
+    color: #646464;
+}
+
+.tags-form p.tag-contato {
+    color: white;
+    background-color: #00d1ff;
+    margin-top: 6px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    font-family: "GT America";
+}
+
+.cont-shadow {
+    margin: 15px 0;
+    box-shadow: 0 0 5px gray;
+}
+
+.cont-shadow:hover {
+    box-shadow: 0 0 20px #99EEFF;
+}
+
+.w60 {
+    width: 60%;
+    float: left;
+}
+
+.w40 {
+    width: 40%;
+    float: left;
+}
